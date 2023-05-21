@@ -1,0 +1,4 @@
+flask
+guicorn
+sqlalchemy
+mysql-connector-python
