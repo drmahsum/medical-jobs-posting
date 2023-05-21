@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine,text
+import os
 
-
-connector_string = 'mysql+mysqlconnector://e3jrja054vqsmjtwfcui:pscale_pw_4MHBCRnvvsw3nG1TQaNuAX7H46tkEKZsMwt28lbcoWz@aws.connect.psdb.cloud/test'
+connector_string = os.environ["DB_CRED"]
 
 engine = create_engine(connector_string,echo=True)
 
