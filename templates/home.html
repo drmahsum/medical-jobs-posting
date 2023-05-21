@@ -1,0 +1,64 @@
+<!doctype html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Flask Project</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <style>
+               #banner{
+                width:100%;
+                height:500px;
+                object-fit:cover;
+               }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center bg-primary text-light mt-1 p-4 mb-1 text-uppercase">{{name}}</h1>
+            <img src="./static/image.jpg" class="img-fluid" id="banner" alt="hero image" />
+            <p class="lead mt-3">
+                Hello my name is Mahsum this is my project to show you the availabe job positions. Please be member of our forum to comment and apply for jobs
+            </p>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <p class="lead">
+                        Sint consequat irure nulla laborum reprehenderit consequat velit. Lorem irure laborum magna in commodo qui ea et consectetur ut fugiat et ea. Minim enim elit eiusmod ex laboris ea amet irure veniam dolor. Consequat exercitation dolore consectetur aute officia sunt magna irure eu nisi. Minim velit esse voluptate occaecat mollit dolore dolore duis sit laboris sit irure Lorem duis.
+                    </p>
+                    <p class="lead">
+                        Sint consequat irure nulla laborum reprehenderit consequat velit. Lorem irure laborum magna in commodo qui ea et consectetur ut fugiat et ea. Minim enim elit eiusmod ex laboris ea amet irure veniam dolor. Consequat exercitation dolore consectetur aute officia sunt magna irure eu nisi. Minim velit esse voluptate occaecat mollit dolore dolore duis sit laboris sit irure Lorem duis.
+                    </p>
+                </div>
+
+                <div class="d-md-none d-lg-block col-lg-6">
+                    <img class="img-fluid" src="../static/image1.jpg" />
+                </div>
+            </div>
+            <p class="lead">
+                Sint consequat irure nulla laborum reprehenderit consequat velit. Lorem irure laborum magna in commodo qui ea et consectetur ut fugiat et ea. Minim enim elit eiusmod ex laboris ea amet irure veniam dolor. Consequat exercitation dolore consectetur aute officia sunt magna irure eu nisi. Minim velit esse voluptate occaecat mollit dolore dolore duis sit laboris sit irure Lorem duis.
+            </p>
+            <p class="lead">
+                Enim anim eu excepteur aliquip deserunt sint deserunt ea cupidatat cillum velit ad reprehenderit ipsum. Amet nisi et occaecat nisi culpa magna ut ea irure pariatur. Aliquip aliquip voluptate veniam incididunt aliquip. Esse voluptate sit excepteur amet qui non dolor anim et nisi ut ea eu. Aliquip aute Lorem exercitation minim quis cupidatat reprehenderit irure quis est.
+
+Commodo magna et commodo aliqua eiusmod fugiat elit. Tempor commodo velit dolor consectetur fugiat deserunt laborum eu occaecat do pariatur. Magna reprehenderit nulla quis sunt nostrud dolore dolore magna culpa veniam mollit.
+
+Aliquip exercitation labore laboris enim ad ad reprehenderit et tempor laborum reprehenderit excepteur tempor. Officia elit dolore dolor qui labore elit aliquip id eiusmod et. Fugiat dolor nostrud non ad est duis sunt veniam nulla id officia nulla. Duis sunt fugiat aute consequat deserunt. Id duis dolore est occaecat aute Lorem mollit quis esse dolore sunt nisi.
+
+Esse dolor reprehenderit dolore Lorem aliquip aliquip aute laborum. Laboris sunt irure esse minim irure consectetur labore do. Anim id qui ipsum sit minim aliquip pariatur non amet dolor nisi do est pariatur. In amet duis nostrud nulla veniam quis ullamco magna duis minim aliquip quis amet nisi. Proident do est quis sint anim occaecat qui.
+
+Voluptate non dolore nulla non. Reprehenderit labore laboris tempor eiusmod et cillum Lorem. Nisi fugiat sit officia ad exercitation.
+
+Ullamco incididunt do proident eiusmod cillum aute cillum. Commodo id esse eu est elit id non. Quis enim aliqua aliqua id tempor aute commodo anim commodo dolor culpa cillum.
+            </p>
+            <p class="lead">To make api calls use <a href="/api">this link.</a></p>
+            <div class="row">
+                {% for job in jobs %}
+                   {% include "jobs.html" %}
+
+                {% endfor %}
+            </div>
+            <footer class="text-center text-secondary fs-5 p-3">{{name}}- Made with ❤️</footer>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    </body>
+</html>
