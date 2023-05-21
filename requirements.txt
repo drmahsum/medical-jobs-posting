@@ -1,4 +1,4 @@
 flask
-guicorn
+gunicorn
 sqlalchemy
 mysql-connector-python
