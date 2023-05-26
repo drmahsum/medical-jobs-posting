@@ -7,6 +7,6 @@ In this website healthcare professional specifically doctors can look for jobs. 
 
 To apply a job user can click on apply button and it will open email client so that user can send application email to job poster. To add a job I have to insert a row to jobs table in database.In database there title,location,salary and email columns which is email of job poster.
 
-To test it locally on your machine, clone this repository and install requirements with  `pip install -r requirements.txt` and to run server you should run `flask run` command in terminal to run it in debug mode you can use ` flask run --debug` command.You need to use your own database creditentials in app.py file
+To test it locally on your machine, clone this repository and install requirements with  `pip install -r requirements.txt` and to run server you should run `flask run` command in terminal to run it in debug mode you can use ` flask run --debug` command.You need to use your own database creditentials in app.py file change `DB_CRED` with your own creditentials. I used [Planetscale](https://app.planetscale.com/) free database service and to host demo I used [Render](https://dashboard.render.com/).You can sign up to server your own version of website. Both of them have free services(but limited functionalities).
 
 Feel free to contribute to this project and make pull requests.
