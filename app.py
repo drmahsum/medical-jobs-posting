@@ -11,4 +11,4 @@ def job_portal():
     jobs = load_jobs()
     return jsonify(jobs)
 if __name__=="__main__":
-    app.run(host="0.0.0.0"d)
+    app.run(host="0.0.0.0")
